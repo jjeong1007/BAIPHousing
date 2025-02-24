@@ -67,10 +67,17 @@ body{
     line-height: 44px;
 }
 
+.baipParallax{
+    display:grid;
+    grid-template-areas: "stack";
+    height:4000px;
+}
+
+
 .parallax{
     display:grid;
     grid-template-areas: "stack";
-    height:10000px;
+    z-index: 1;
 }
 
 .parallax > *{
@@ -78,13 +85,15 @@ body{
 }
 
 .image1{
+    z-index: 4;
+    opacity: 1;
     display: flex;
     align-items: start;
     gap:0px;
     animation: fade-out linear forwards;
     animation-timeline: view();
-    animation-range-start: 250px;
-    animation-range-end: 2000px;
+    animation-range-start: contain;
+    animation-range-end: 3000px;
 }
 
 .scroll1{
@@ -93,15 +102,96 @@ body{
     width:100%
 }
 
+.image2{
+    opacity:1;
+    z-index: 3;
+    display: flex;
+    align-items: start;
+    gap:0px;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain;
+    animation-range-end: 1000px;
+
+}
+
 .scroll2{
+    position: sticky;
+    top:-76px;
     width:100%
 }
 
+.quote1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:200px;
+    margin-top: 2000px;
+    z-index: 3;
+}
+
+
+
 @keyframes fade-out{
-    from{
-        opacity: 1;
-    }
     to{
         opacity: 0;
     }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.finaidContainer{
+    margin-top:128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.finaidHeader{
+    font-size:44px;
+    width:800px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.finaidBody{
+    font-size:24px;
+    width:800px;
+    line-height: 44px;
+}
+
+.experienceContainer{
+    margin-top:128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experienceHeader{
+    font-size:44px;
+    width:800px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.experienceBody{
+    font-size:24px;
+    width:800px;
+    line-height: 44px;
 }
