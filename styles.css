@@ -2,3 +2,106 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     
 }
+
+.hero{
+    width:100%;
+}
+
+.heroContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Headers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heroHeader{
+    display: flex;
+    font-size: 72px;
+    width:800px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.authors{
+    font-size: 20px;
+    margin-top: -32px;
+}
+
+.crisisContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crisisBody{
+    font-size:24px;
+    width:800px;
+    line-height: 44px;
+}
+
+.baipContainer{
+    margin-top:128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.baipHeader{
+    font-size:44px;
+    width:800px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.baipBody{
+    font-size:24px;
+    width:800px;
+    line-height: 44px;
+}
+
+.parallax{
+    display:grid;
+    grid-template-areas: "stack";
+    height:10000px;
+}
+
+.parallax > *{
+    grid-area: stack;
+}
+
+.image1{
+    display: flex;
+    align-items: start;
+    gap:0px;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range-start: 250px;
+    animation-range-end: 2000px;
+}
+
+.scroll1{
+    position: sticky;
+    top:-76px;
+    width:100%
+}
+
+.scroll2{
+    width:100%
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
