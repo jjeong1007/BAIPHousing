@@ -70,7 +70,7 @@ body{
 .baipParallax{
     display:grid;
     grid-template-areas: "stack";
-    height:4000px;
+    height:11000px;
 }
 
 
@@ -108,10 +108,10 @@ body{
     display: flex;
     align-items: start;
     gap:0px;
-    animation: fade-in linear forwards;
+    animation: fade-out linear forwards;
     animation-timeline: view();
-    animation-range-start: contain;
-    animation-range-end: 1000px;
+    animation-range-start: 4000px;
+    animation-range-end: 5000px;
 
 }
 
@@ -121,15 +121,61 @@ body{
     width:100%
 }
 
-.quote1{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-right:200px;
-    margin-top: 2000px;
-    z-index: 3;
+#quote1{
+    display:absolute;
+    margin-left: 300px;
+    margin-top: 2488px;
+    z-index: 10;
 }
 
+
+.image3{
+    opacity:1;
+    z-index: 2;
+    display: flex;
+    align-items: start;
+    gap:0px;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range-start: 5000px;
+    animation-range-end:10000px;
+}
+
+.scroll3{
+    position: sticky;
+    top:-76px;
+    width:100%
+}
+
+
+#quote2{
+    display:absolute;
+    margin-left: 350px;
+    margin-top: 4488px;
+    z-index: 11;
+}
+
+.image4{
+    opacity:1;
+    z-index: 1;
+    display: flex;
+    align-items: start;
+    gap:0px;
+}
+
+.scroll4{
+    position: sticky;
+    top:-76px;
+    width:100%
+}
+
+
+#quote3{
+    display:absolute;
+    margin-left: 650px;
+    margin-top: 8200px;
+    z-index: 12;
+}
 
 
 @keyframes fade-out{
@@ -146,6 +192,7 @@ body{
         opacity: 1;
     }
 }
+
 
 
 
