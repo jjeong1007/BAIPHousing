@@ -254,3 +254,25 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.crisisImage{
+    margin-top:-200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices{
+    width:100%;
+}
+
+.changesContainer{
+    margin-top:-150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changes{
+    width:100%;
+}
