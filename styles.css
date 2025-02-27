@@ -242,3 +242,15 @@ body{
     width:800px;
     line-height: 44px;
 }
+
+
+.housingMap{
+    width:500px;
+    height:1000px;
+}
+
+.mapContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
