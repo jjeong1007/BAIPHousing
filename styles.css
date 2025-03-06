@@ -7,28 +7,24 @@ body{
     width:100%;
 }
 
-.heroContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .Headers{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .heroHeader{
-    display: flex;
     font-size: 72px;
-    width:800px;
+    width:60%;
     font-weight: 600;
     color: #000;
     letter-spacing: 2px;
 }
 
 .authors{
+    width:60%;
     font-size: 20px;
     margin-top: -32px;
 }
@@ -41,7 +37,7 @@ body{
 
 .crisisBody{
     font-size:20px;
-    width:800px;
+    width:60%;
     line-height: 44px;
 }
 
@@ -55,7 +51,7 @@ body{
 
 .baipHeader{
     font-size:44px;
-    width:800px;
+    width:60%;
     font-weight: 600;
     color: #000;
     letter-spacing: 2px;
@@ -63,7 +59,7 @@ body{
 
 .baipBody{
     font-size:20px;
-    width:800px;
+    width:60%;
     line-height: 44px;
 }
 
@@ -84,10 +80,11 @@ body{
     grid-area: stack;
 }
 
+
+
 .image1{
     z-index: 4;
     opacity: 1;
-    display: flex;
     align-items: start;
     gap:0px;
     animation: fade-out linear forwards;
@@ -99,7 +96,7 @@ body{
 .scroll1{
     position: sticky;
     top:-76px;
-    width:100%
+    width:100vw;
 }
 
 .image2{
@@ -112,18 +109,17 @@ body{
     animation-timeline: view();
     animation-range-start: 4000px;
     animation-range-end: 5000px;
-
 }
 
 .scroll2{
     position: sticky;
     top:-76px;
-    width:100%
+    width:100vw;
 }
 
 #quote1{
     display:absolute;
-    margin-left: 300px;
+    margin-left: 10%;
     margin-top: 2488px;
     z-index: 10;
 }
@@ -144,7 +140,7 @@ body{
 .scroll3{
     position: sticky;
     top:-76px;
-    width:100%
+    width:100vw;
 }
 
 
@@ -166,7 +162,7 @@ body{
 .scroll4{
     position: sticky;
     top:-76px;
-    width:100%
+    width:100vw;
 }
 
 
@@ -209,7 +205,7 @@ body{
 
 .finaidHeader{
     font-size:44px;
-    width:800px;
+    width:60%;
     font-weight: 600;
     color: #000;
     letter-spacing: 2px;
@@ -217,7 +213,7 @@ body{
 
 .finaidBody{
     font-size:24px;
-    width:800px;
+    width:60%;
     line-height: 44px;
 }
 
@@ -231,7 +227,7 @@ body{
 
 .experienceHeader{
     font-size:44px;
-    width:800px;
+    width:60%;
     font-weight: 600;
     color: #000;
     letter-spacing: 2px;
@@ -239,7 +235,7 @@ body{
 
 .experienceBody{
     font-size:24px;
-    width:800px;
+    width:60%;
     line-height: 44px;
 }
 
@@ -288,3 +284,94 @@ body{
 .airbnb{
     width:100%;
 }
+
+
+@media only screen and (max-width:875px){
+    .scroll1{
+        top:25vh;
+    }
+    .scroll2{
+        top:25vh;
+    }
+    .scroll3{
+        top:25vh;
+    }
+    .scroll4{
+        top:25vh;
+    }
+
+    .quotescroll{
+        width:400px;
+    }
+
+    #quote1{
+        margin-left: 0;
+        margin-top: 2488px;
+    }
+
+    #quote2{
+        margin-left: 0;
+        margin-top: 4488px;
+    }
+
+    #quote3{
+        margin-left: 0;
+        margin-top: 8200px;
+    }
+
+    .heroHeader{
+        font-size: 36px;
+    }
+
+    .authors{
+        font-size:16px;
+        margin-top:8px;
+    }
+
+    .crisisBody{
+        font-size:16px;
+        line-height: 32px;
+    }
+
+    .crisisImage{
+        margin-top: 8px;
+    }
+
+    .baipHeader{
+        font-size:36px;
+    }
+
+    .baipBody{
+        font-size:16px;
+        line-height: 32px;
+    }
+
+    .airbnbContainer{
+        margin-top: -50px;
+    }
+
+    .finaidHeader{
+        font-size:36px;
+    }
+
+    .finaidBody{
+        font-size:16px;
+        line-height: 32px;
+    }
+
+    .changesContainer{
+        margin-top:0px;
+    }    
+
+    .experienceHeader{
+        font-size:36px;
+    }
+    
+    .experienceBody{
+        font-size:16px;
+        line-height: 32px;
+    }
+}
+
+
+
